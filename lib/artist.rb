@@ -8,7 +8,7 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-    binding.pry
+    # binding.pry
   end 
   
 end 
