@@ -16,7 +16,7 @@ class Artist
 
   def songs
     binding.pry
-    Song.all.select {|song| song.artist == self}
+    Song.all.select {|song| song.artist = self}
     # select searches through the Song class returns 
     # an array containing all elements of Songs 
     #for which the given block returns a true value.
