@@ -7,7 +7,7 @@ class Artist
   
   def initialize(name)
     @name = name
-    songs = [] 
+    songs = []
   end 
 
 
@@ -20,9 +20,8 @@ class Artist
     #then takes each obj in array and sets the song == to itself(artist)instance
   end
 
-  def add_song(songs)
-    songs << song
-    songs.artist = self
+  def add_song(song)
+    song.artist = self
   end
 
   def add_song_by_name(name)
@@ -30,4 +29,9 @@ class Artist
     song_obj.artist = self
     songs << song_obj
   end 
+
+  def self.song_count
+    Song.all.count
+  end 
+ 
 end
