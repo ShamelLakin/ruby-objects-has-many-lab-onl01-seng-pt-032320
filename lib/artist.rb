@@ -21,7 +21,7 @@ class Artist
     songs.artist = self
   end
 
-  def add_song_by_name(songs)
-    songs.collect{|song| song.artist}
+  def add_song_by_name(name)
+  Song.name == 
   end 
 end
