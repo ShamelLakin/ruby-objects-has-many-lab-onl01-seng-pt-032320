@@ -16,8 +16,13 @@ class Author
     end
 
     def add_post_by_title(title)
-        post_obj = Post.new(name)
-        post_obj.author = self
-        posts << post_obj
+        # binding.pry
+        title = Post.new(title)
+        title.author = self
+        posts << title
+    end 
+
+    def self.post_count
+        Post.all.count
     end 
 end 
